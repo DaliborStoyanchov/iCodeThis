@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day002 - Inbox UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="main-container">
+    <div class="green-background"></div>
+    <div class="content">
+      <h2>Your messages</h2>
+      <button>Compose <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="25"
+          height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+          <path d="M13.5 6.5l4 4" />
+        </svg></button>
+      <div class="messages">
+        <div class="message-profile">
+          <img
+            src="https://img.freepik.com/free-photo/portrait-young-businessman-with-mustache-glasses-3d-rendering_1142-51509.jpg?size=626&ext=jpg"
+            alt="profile-picture" height="70" width="70">
+          <div class="dot available"></div>
+          <div class="text">
+            <h3>Rafael Jay</h3>
+            <p class="message">Hi there, how are you?</p>
+          </div>
+          <p class="days-ago">4 days ago</p>
+        </div>
+        <div class="message-profile">
+          <img
+            src="https://img.freepik.com/free-photo/portrait-beautiful-young-woman-with-stylish-hairstyle-glasses_1142-40217.jpg?size=626&ext=jpg&ga=GA1.1.1749557460.1718023293&semt=sph"
+            alt="profile-picture" height="70" width="70">
+          <div class="dot busy"></div>
+          <div class="text">
+            <h3>Ashley Pierce</h3>
+            <p class="message">How was the trip?</p>
+          </div>
+          <p class="days-ago">5 days ago</p>
+        </div>
+        <div class="message-profile">
+          <img
+            src="https://img.freepik.com/premium-psd/3d-cartoon-man-smiling-portrait-isolated-transparent-background-png-psd_888962-1569.jpg?size=626&ext=jpg&ga=GA1.1.1749557460.1718023293&semt=sph"
+            alt="profile-picture" height="70" width="70">
+          <div class="dot available"></div>
+          <div class="text">
+            <h3>Frank Johnson</h3>
+            <p class="message">I hope you are well</p>
+          </div>
+          <p class="days-ago">Mat 12, 2022</p>
+        </div>
+        <div class="message-profile">
+          <img
+            src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg&ga=GA1.1.1749557460.1718023293&semt=sph"
+            alt="profile-picture" height="70" width="70">
+          <div class="dot not-available"></div>
+          <div class="text">
+            <h3>Chris Mayer</h3>
+            <p class="message">Thank you for answering</p>
+          </div>
+          <p class="days-ago">Feb 9, 2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

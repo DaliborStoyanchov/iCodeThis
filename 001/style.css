@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+section.main-container {
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 1rem 1rem -0.8rem #f0f0ff;
+  border-radius: 1rem;
+  border: 1px solid #f0f0ff8c;
+  position: relative;
+  background: #ffffff;
+  padding: 2rem;
+  transition: 0.5s;
+}
+
+.icon-tabler-x {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  padding: 0.25rem;
+}
+
+.collections {
+  margin-top: 2rem;
+}
+
+.collection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  padding: 0.25rem;
+  border: 1px solid transparent;
+}
+
+.collection:hover {
+  border-color: #f0f0ff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+img {
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1rem -0.8rem #bdbdfa;
+  object-fit: cover;
+  border: 1px solid #f0f0ff;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.dot {
+  background: #000;
+  border-radius: 50%;
+  width: 0.25rem;
+  height: 0.25rem;
+  margin: 0 0.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button.create-new {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  gap: 0.5rem;
+  background: transparent;
+  color: #d24964;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+button.create-new:hover {
+  background: #bdbdfa30;
+}
+
+.icon-tabler-plus {
+  border-radius: 50%;
+  background: #d2496518;
+  padding: 0.25rem;
+}
+
+button.save:hover {
+  box-shadow: 0 0 1rem #e492fb;
+  transform: scale(1.03);
+}
+
+button.save {
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 150px;
+  background: linear-gradient(90deg, #c584f0, #fb6d9e);
+}
+
+.icon-tabler-check {
+  border-radius: 50%;
+  border: 3px solid #bdbdfa;
+  background: #000;
+  padding: 0.25rem;
+  margin-left: auto;
+}
