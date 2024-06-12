@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffbfb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.login-container {
+  width: 90%;
+  max-width: 700px;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  gap: 2rem;
+  box-shadow: 0 1rem 1rem #fae1f0;
+}
+
+img {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  object-fit: cover;
+  width: 50%;
+}
+
+.form-section {
+  width: 100%;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1.4rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  margin-bottom: 3rem;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+form p label {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+form p input {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background: #fffbfb;
+  border: 1px solid #727272;
+  border-radius: 0.25rem;
+  height: 3rem;
+  outline: none;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.buttons-container p {
+  color: #727272;
+  font-size: 0.8rem;
+}
+
+button {
+  width: 100%;
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  height: 3rem;
+  transition: 0.5s;
+}
+
+.submit-btn {
+  background: #a04625;
+  box-shadow: 0 0.5rem 1rem #f6e4c8;
+}
+
+.submit-btn:hover {
+  background: #a04625cb;
+}
+
+.linkedin-btn {
+  background: #0f64c2;
+  box-shadow: 0 0.5rem 1rem #c9d8ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.linkedin-btn:hover {
+  background: #0f63c2cb;
+}
+
+::placeholder {
+  color: #727272;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dot {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #0f64c2;
+}
+
+@media (max-width: 680px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  img {
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: unset;
+    height: 250px;
+  }
+
+  .buttons-container {
+    align-items: center;
+  }
+}
