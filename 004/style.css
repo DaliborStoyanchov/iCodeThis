@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #f5f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0d0e43;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blue-section {
+  background: #e9eaff;
+  position: absolute;
+  top: -45%;
+  left: -15%;
+  border-radius: 2rem;
+  width: 300px;
+  height: 200px;
+  z-index: -1;
+}
+
+.notification-container {
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.notification {
+  border-radius: 1rem;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 1rem 1rem #e6e6f2;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.icon-tabler-bell {
+  border-radius: 50%;
+  background: #0d0e43;
+  color: #fff;
+  padding: 1.1rem;
+  position: absolute;
+  right: 0;
+  top: -5rem;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.icon-tabler-bell:hover {
+  background: #fff;
+  color: #0d0e43;
+  border-color: #0d0e43;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icon-tabler-mail {
+  background: #ffe8f3;
+  color: #ce4173;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+button {
+  font-size: 0.8rem;
+  border: 1px solid;
+  border-radius: 2rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.twitter {
+  border-color: #1287bb;
+  color: #1287bb;
+}
+
+.twitter:hover {
+  background: #1287bb;
+  color: #fff;
+}
+
+.twitter:hover .icon-tabler-brand-twitter,
+.facebook:hover .icon-tabler-brand-facebook {
+  color: #fff;
+}
+
+.facebook {
+  border-color: #3963a3;
+  color: #3963a3;
+}
+
+.facebook:hover {
+  background: #3963a3;
+  color: #fff;
+}
+
+.icon-tabler-brand-twitter {
+  color: #1287bb;
+  transition: 0.5s;
+}
+
+.icon-tabler-brand-facebook {
+  color: #3963a3;
+  transition: 0.5s;
+}
+
+section.notification-container {
+  background: fff;
+}
