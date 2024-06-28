@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #1f2438e9;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 5rem;
+  padding: 5rem 1rem;
+}
+
+.gray-background {
+  background: #ececf0;
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  width: 400px;
+  height: 70vh;
+  z-index: -1;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 1.5rem -0.5rem #cbcbcb;
+}
+
+#shadow-host-companion {
+  display: none;
+}
+
+.headphones {
+  max-width: 350px;
+  position: relative;
+}
+
+.headphones img {
+  display: block;
+  margin: 0 auto 1rem auto;
+  object-position: 0 100%;
+  width: 100%;
+}
+
+.headphones-profile {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0.8rem;
+}
+
+#profile-1 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-position: 60%;
+  margin: unset;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+}
+
+.headphones-paragraph,
+.date {
+  font-size: 0.8rem;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: -3rem;
+  left: 40%;
+}
+
+.dot {
+  border: 1px solid #8790b45f;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background: #8790b4;
+}
+
+.location-container {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+}
+
+.icon-tabler-x {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  border: 1px solid #8790b45f;
+  color: #8790b4;
+}
+
+.locations {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.location {
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 0.2rem;
+}
+
+.location:hover,
+.selected {
+  background: #8790b41d;
+  color: #000;
+}
+
+.profile {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email,
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.email {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .locations {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .icon-tabler-x {
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+
+  .location-container > h2 {
+    text-align: center;
+  }
+
+  .location {
+    padding: 0.25rem;
+  }
+}
