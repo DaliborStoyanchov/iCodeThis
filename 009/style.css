@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: #ee4a56;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background: #fff;
+  border-radius: 1.5rem;
+  width: 90%;
+  max-width: 380px;
+  margin: 5rem 0;
+  padding: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul li:hover .icon-tabler {
+  background: #ee4a56;
+  color: #fff;
+}
+
+nav ul li:hover p {
+  visibility: hidden;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.item,
+.icon-tabler {
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+img {
+  object-fit: cover;
+  padding: 0.25rem;
+}
+
+.frequent-payments {
+  margin: 3rem 0;
+  background: linear-gradient(#ee4a56, #f34d51);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #fff;
+}
