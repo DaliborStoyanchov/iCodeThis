@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f8ff;
+  color: #5847bc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  width: 90%;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 5rem 3rem;
+}
+
+.promote,
+.theme-options,
+.protocols-options {
+  display: none;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.current-theme,
+input,
+.selected-protocol,
+.selected-theme {
+  border: 1.5px solid #5847bc44;
+  border-radius: 0.25rem;
+  padding: 0.6rem;
+  height: 3rem;
+}
+
+.current-theme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0 0.5rem;
+}
+
+.theme-options,
+.protocols-options {
+  background: #3d5e9610;
+  border-radius: 0.25rem;
+}
+
+ul {
+  padding-bottom: 0.5rem;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+}
+
+li:hover {
+  background: #5847bc;
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  margin-bottom: 0.8rem;
+}
+
+::placeholder {
+  color: #5847bc76;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 0.9rem;
+  cursor: pointer;
+  height: 3rem;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+}
+
+.create {
+  border: 1px solid #5847bc;
+  background: #5847bc;
+  color: #fff;
+}
+
+.create:hover {
+  background: transparent;
+  color: #5847bc;
+  border: 1px solid #5847bc;
+}
+
+.advanced {
+  background: transparent;
+  color: #5847bc;
+}
+
+.advanced:hover {
+  border: 1px solid #5847bc;
+}
+
+.icon-tabler {
+  cursor: pointer;
+}
+
+.selected-container {
+  display: flex;
+  margin: 1rem 0;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.selected-protocol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.selected-theme {
+  width: 100%;
+  height: 43px;
+  padding: 0.6rem;
+}
+
+.protocols-options {
+  width: 100px;
+}
+
+.social-links-container {
+  margin-top: 2rem;
+}
+
+.icon-tabler-brand-facebook,
+.icon-tabler-brand-twitter {
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+  margin-top: 0.2rem;
+}
+
+.icon-tabler-brand-facebook {
+  background: #3d5d96;
+}
+
+.icon-tabler-brand-twitter {
+  background: #29a4ef;
+}
