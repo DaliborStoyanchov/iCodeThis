@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(#f9f3fa, #c1b7b8);
+  color: #000000d1;
+}
+
+.invite-card {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 0.5rem -1rem #989091;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0000000f;
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: #00000061;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+img {
+  border: 0.5rem solid #0000001d;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+img + p {
+  font-size: 0.7rem;
+  margin: 1rem 0;
+}
+
+form {
+  width: 100%;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: 2px solid #0000001d;
+  border-radius: 0.25rem;
+  margin: 0.25rem 0 1rem 0;
+}
+
+.checkbox {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.checkbox label {
+  margin-top: 0.25rem;
+}
+
+input[type="checkbox"] {
+  border: none;
+  border-radius: 0.25rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+::placeholder {
+  color: #00000085;
+}
+
+button {
+  width: 100%;
+  color: #fff;
+  background-color: #ce1a5f;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+  margin: 1.5rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  filter: drop-shadow(0 0 0.5rem #de7ba1);
+}
+
+a {
+  color: #6d12ff;
+}
+
+a:last-of-type {
+  font-size: 0.7rem;
+}
