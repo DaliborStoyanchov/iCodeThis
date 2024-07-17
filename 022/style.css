@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top right, #0d4d7a, #062c4a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffffdd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.account-panel {
+  background-color: #103c62;
+  filter: drop-shadow(0 0 2rem #0c6094);
+  padding: 1.2rem;
+  border-radius: 0.25rem;
+  width: 90%;
+  max-width: 400px;
+}
+
+.profiles {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 1/1;
+  min-width: 70px;
+}
+
+.icon-tabler-chevron-right {
+  cursor: pointer;
+  color: #062c4a;
+}
+
+button {
+  background-color: #39a4ee;
+  color: inherit;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #39a2eec5;
+}
+
+.account-list {
+  border-top: 2px solid #062c4a7b;
+  padding: 1rem;
+}
+
+.account-list li {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.account-list li:hover {
+  color: #0c6094;
+}
