@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  font-family: "Orbitron", sans-serif;
+  background: url("https://images.unsplash.com/photo-1560986752-2e31d9507413?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: center;
+  background-color: #5b273c;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.countdown-container {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  align-items: center;
+  color: #fff;
+  line-height: 1.5;
+  backdrop-filter: blur(3px);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.block-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blocks div {
+  background-color: #ffffff2e;
+  padding: 0.5rem 0.8rem;
+  font-size: 2rem;
+  border-radius: 3px;
+}
+
+@media (max-width: 500px) {
+  .block-container {
+    gap: 0.5rem;
+  }
+
+  .blocks div {
+    font-size: 1rem;
+    max-width: 60px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .block-container {
+    display: grid;
+  }
+}
