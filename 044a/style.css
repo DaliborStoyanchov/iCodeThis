@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #f8f4ff;
+  color: #9a999e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section.search-ctr {
+  width: 90%;
+  max-width: 600px;
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem #ccc7d8;
+  border-radius: 1.5rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #9a999e;
+  border-radius: 0.25rem;
+  flex: calc(60%);
+}
+
+input[type="search"],
+input[type="search"]:focus,
+input[type="search"]:active {
+  border: none;
+  outline: none;
+}
+
+.map-btn {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  background-color: #271a50;
+  color: #e9e4f2;
+  padding-inline: 0.5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: 0.5s;
+}
+
+.map-btn:hover {
+  border: 1px solid #9a999e;
+  background-color: #fff;
+  color: #271a50;
+  cursor: pointer;
+}
+
+.icon-tabler-map {
+  color: inherit;
+}
+
+.job-cards {
+  color: #2f1f4c;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.job-card {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  transition: 0.5s;
+}
+
+.job-card:hover {
+  border-color: #9a999e;
+  color: #271a50c5;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.job-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.furniture {
+  background-color: #ffedec;
+}
+
+.property {
+  background-color: #f6ecff;
+}
+
+.job {
+  background-color: #ecf1ff;
+}
+
+.travel {
+  background-color: #d7faf3;
+}
+
+.boat {
+  background-color: #e1ffd3;
+}
+
+.mc {
+  background-color: #f1ded5;
+}
+
+.economy {
+  background-color: #fff4ca;
+}
+
+.holiday {
+  background-color: #ffdac9;
+}
+
+@media (max-width: 420px) {
+  section.search-ctr {
+    width: auto;
+    max-width: 340px;
+  }
+
+  form {
+    display: grid;
+  }
+
+  form .map-btn {
+    height: 2rem;
+  }
+}
