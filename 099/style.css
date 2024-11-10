@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 5rem 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f2fb;
+  color: #1e1d4e;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.512), 0 2px 4px -2px #0000003d;
+  width: 90%;
+  max-width: 850px;
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p.description {
+  padding-block: 1rem;
+  width: 45ch;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+
+  & > button {
+    border: none;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    color: #553881;
+    background-color: #1e1d4e0f;
+    border-radius: 1rem;
+  }
+}
+
+.people {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .name {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 800;
+    padding-top: 0.75rem;
+  }
+
+  & .profession {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+
+  & .view-content {
+    background-color: #1e1d4e;
+    color: #f3f2fbd6;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.75rem;
+    border: none;
+    border-radius: 1rem;
+  }
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.icon-tabler-chevron-left,
+.icon-tabler-chevron-right {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-tabler-paperclip,
+.icon-tabler-calendar-event,
+.icon-tabler-cast {
+  width: 1rem;
+  height: 1rem;
+}
+
+.background {
+  position: absolute;
+  background-color: #1e1d4e;
+  width: 75%;
+  height: 65%;
+  max-width: 750px;
+  z-index: -1;
+  border-radius: 1.5rem;
+}
