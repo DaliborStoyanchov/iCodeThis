@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>102 Feedback Card</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <div class="shadow-ctr"></div>
+  <div class="ctr">
+    <h2>Give feedback</h2>
+    <p>What do you think of the issue search experience within Jira projects?</p>
+    <div class="review-icons">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-mood-cry">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M9 10l.01 0" />
+          <path d="M15 10l.01 0" />
+          <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0" />
+          <path d="M17.566 17.606a2 2 0 1 0 2.897 .03l-1.463 -1.636l-1.434 1.606z" />
+          <path d="M20.865 13.517a8.937 8.937 0 0 0 .135 -1.517a9 9 0 1 0 -9 9c.69 0 1.36 -.076 2 -.222" />
+        </svg>
+        <p>Terrible</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-mood-sad">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+          <path d="M9 10l.01 0" />
+          <path d="M15 10l.01 0" />
+          <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0" />
+        </svg>
+        <p>Bad</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-mood-empty">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+          <path d="M9 10l.01 0" />
+          <path d="M15 10l.01 0" />
+          <path d="M9 15l6 0" />
+        </svg>
+        <p>Okay</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-mood-smile">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+          <path d="M9 10l.01 0" />
+          <path d="M15 10l.01 0" />
+          <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
+        </svg>
+        <p>Good</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-mood-happy">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+          <path d="M9 9l.01 0" />
+          <path d="M15 9l.01 0" />
+          <path d="M8 13a4 4 0 1 0 8 0h-8" />
+        </svg>
+        <p>Amazing</p>
+      </div>
+    </div>
+    <form>
+      <p>What are the main reasons for your rating?</p>
+      <textarea id="feedback" name="feedback" rows="5" cols="40" maxlength="500" required></textarea>
+      <div class="checkbox">
+        <input type="checkbox" name="privacy-policy" id="privacy-policy">
+        <label for="privacy-policy">I may be contacted about this feedback. <a href="#">Privacy Policy</a></label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" name="join" id="join">
+        <label for="join">I'd like to help improve by joining the <a href="#">Research Group</a></label>
+      </div>
+      <div class="buttons-ctr">
+        <button type="submit">Submit</button>
+        <button type="button">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
