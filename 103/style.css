@@ -1,0 +1,122 @@
+:root {
+  --background-color: #f3f8fe;
+  --card-color-one: #506fde;
+  --card-color-two: #1f42bd;
+  --card-color-shadow: #dde5f9;
+  --card-color: #ffffff;
+  --card-color-input: #7d93dd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  padding: 5rem 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+}
+
+.ctr {
+  width: 800px;
+  max-width: 90%;
+  height: 300px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--card-color-one),
+    var(--card-color-two)
+  );
+  color: var(--card-color);
+  box-shadow: 0 0 0 1.25rem var(--card-color-shadow);
+  position: relative;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.9rem;
+  padding: 1rem 0 1.8rem;
+  width: 30ch;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  border: 1px solid var(--card-color);
+  border-radius: 5rem;
+  width: 400px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-color-input);
+
+  & input[type="text"] {
+    padding-inline: 1rem;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    outline: none;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    width: 80%;
+
+    &::placeholder {
+      color: inherit;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  & button[type="submit"] {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    border: none;
+    cursor: pointer;
+    color: #1f42bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in;
+
+    &:hover {
+      color: #fff;
+      background: none;
+    }
+  }
+}
+
+.avatars {
+  position: absolute;
+  top: 17.4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+img {
+  width: 60px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.4rem #fff;
+  cursor: pointer;
+}
