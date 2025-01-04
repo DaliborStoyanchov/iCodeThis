@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  background: #f5f5f5;
+  color: #4c5a62;
+}
+
+section.music-player {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 400px;
+  padding: 2.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  & h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: 60%;
+    font-size: 0.9rem;
+  }
+
+  & .icon-tabler {
+    opacity: 60%;
+    cursor: pointer;
+  }
+}
+
+div.playing-now-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: -0.3rem;
+  }
+
+  & h4 {
+    font-weight: 400;
+  }
+
+  & img {
+    width: 13rem;
+    height: 13rem;
+    background: #4c5a62;
+    margin-block: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+div.progress-wrapper {
+  position: relative;
+  height: 4px;
+  background: #e8eced;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+div.time-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+div.controls {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 2rem;
+
+  & > button {
+    font-family: inherit;
+    aspect-ratio: 1;
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &#play-pause {
+      border: 1px solid #01bfa5;
+    }
+
+    & svg {
+      opacity: 60%;
+    }
+  }
+}
+
+div.songs-list {
+  font-size: 1.25rem;
+
+  & li.song {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+    cursor: pointer;
+    position: relative;
+  }
+
+  & .active {
+    color: #000000;
+
+    &::before {
+      content: "";
+      width: 0.45rem;
+      height: 0.45rem;
+      background-color: #01bfa5;
+      border-radius: 50%;
+      position: absolute;
+      left: -1rem;
+      top: 50%;
+      transform: translateY(-30%);
+    }
+  }
+}
