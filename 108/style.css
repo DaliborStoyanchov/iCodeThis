@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  padding: 5rem 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f5f5;
+  color: #27314e;
+}
+
+.ctr {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 3px;
+  box-shadow: 0 10px 12px 2px #f8d1d1b8;
+  padding: 2.5rem 1.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-top {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  background: radial-gradient(#ffd258, #e1725e);
+  transform: rotate(30deg);
+  border-radius: 40%;
+  top: -50px;
+  right: -150px;
+  z-index: 1;
+}
+
+.background-bottom {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  background: radial-gradient(#ffb656, #ff7676);
+  border-radius: 50%;
+  bottom: -160px;
+  left: -50px;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+button.view-all {
+  position: absolute;
+  right: -1rem;
+  background: none;
+  box-shadow: none;
+  color: white;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+h3,
+p {
+  font-size: 0.75rem;
+}
+
+div.friend-request {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+
+  & .friend {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+
+img {
+  width: 50px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+}
+
+button {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 0.75rem;
+  padding: 0.3rem 1.2rem;
+
+  &:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+}
