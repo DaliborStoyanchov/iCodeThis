@@ -1,0 +1,16 @@
+.header-bg {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLg1Pa6AWbpd1tajEx8-w7LvfxNrN0lGjNBw&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    inset: 0;
+    z-index: -10;
+  }
+}
