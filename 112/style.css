@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  padding: 5rem 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eff0f3;
+  color: #242e4c;
+}
+
+section {
+  width: 90%;
+  max-width: 26rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  padding: 5rem;
+  border-radius: 0.25rem 1.5rem 0.25rem 0.25rem;
+  box-shadow: 0 0 1rem 0.25rem #dfe1e9;
+}
+
+h2 {
+  padding-block: 1.5rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.7rem;
+  padding-block: 0.75rem;
+}
+
+.discount {
+  color: #d89a33;
+  padding-bottom: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+
+  & > * {
+    color: #a8aab1;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+  background-color: #242e4c;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.65rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 0.5rem #242e4c47;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #242e4c;
+    color: #242e4c;
+  }
+}
