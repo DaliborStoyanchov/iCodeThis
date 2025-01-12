@@ -14,3 +14,12 @@
     z-index: -10;
   }
 }
+
+.screen {
+  width: 80%;
+  height: 2rem;
+  margin: auto;
+  border-bottom: 3px solid rgb(8, 145, 178);
+  border-radius: 50%;
+  box-shadow: inset 0 -3px 3px rgb(8, 145, 178, 0.4);
+}
