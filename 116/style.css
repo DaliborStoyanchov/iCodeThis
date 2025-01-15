@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 5rem 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d8dae2;
+  color: #0e0e38;
+}
+
+.circle {
+  width: 10rem;
+  aspect-ratio: 1;
+  background: #e5e7f0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle:nth-child(1) {
+  right: 20%;
+  top: 8%;
+}
+
+.circle:nth-child(2) {
+  width: 15rem;
+  left: 20%;
+  bottom: 2rem;
+}
+
+section {
+  background-color: #eff0f1;
+  padding: 2rem;
+  border-radius: 1.5rem;
+
+  & h2 {
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 1rem;
+  }
+
+  & .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 3rem;
+
+    & button {
+      background: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-size: 0.65rem;
+      padding: 0.3rem;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+}
+
+svg {
+  position: relative;
+  top: 0.1rem;
+  right: -0.2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 296px;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 1.5em;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.images {
+  display: flex;
+  padding-block: 0.5rem;
+  gap: 0.75rem;
+}
+
+.main-img {
+  width: 100%;
+}
+
+img {
+  width: 5rem;
+  aspect-ratio: 1.2;
+  object-fit: cover;
+  border-radius: 1.25rem;
+}
+
+.subject {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+
+  & p {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1050px) {
+  .card {
+    width: 250px;
+  }
+
+  .images {
+    gap: 0;
+    justify-content: space-between;
+  }
+  img {
+    width: 4.3rem;
+  }
+
+  h4,
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 890px) {
+  .cards {
+    gap: 0.1rem;
+  }
+  .card {
+    width: 150px;
+
+    & .main-img {
+      width: 7.5rem;
+    }
+
+    & .images {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .cards {
+    display: grid;
+
+    & .card {
+      width: 300px;
+
+      & .main-img {
+        width: 100%;
+      }
+    }
+  }
+}
